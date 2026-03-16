@@ -1,0 +1,8 @@
+services:
+  yt-dlp:
+    build: .
+    container_name: yt-dlp
+    volumes:
+      - ./downloads:/downloads
+      - ./cookies:/cookies
+    working_dir: /downloads
